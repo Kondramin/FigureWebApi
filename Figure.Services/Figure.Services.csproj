@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Figure.Database\Figure.Database.csproj" />
+    <ProjectReference Include="..\Figure.Interfaces\Figure.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

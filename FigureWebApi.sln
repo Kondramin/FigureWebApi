@@ -5,6 +5,16 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureWebApi", "FigureWebApi\FigureWebApi.csproj", "{579618DD-6317-4458-86F2-C05AB03CFCF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Database", "Figure.Database\Figure.Database.csproj", "{A39664D9-AB3B-47D0-8C21-669538D2FF56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Data.Entity", "Figure.Data.Entity\Figure.Data.Entity.csproj", "{88F3CA5A-6C11-4963-8001-10251553F22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Services", "Figure.Services\Figure.Services.csproj", "{FD347D36-4CA8-4699-BC68-069CA83077AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Interfaces.Base", "Figure.Interfaces.Base\Figure.Interfaces.Base.csproj", "{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Interfaces", "Figure.Interfaces\Figure.Interfaces.csproj", "{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{579618DD-6317-4458-86F2-C05AB03CFCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{579618DD-6317-4458-86F2-C05AB03CFCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{579618DD-6317-4458-86F2-C05AB03CFCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39664D9-AB3B-47D0-8C21-669538D2FF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39664D9-AB3B-47D0-8C21-669538D2FF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39664D9-AB3B-47D0-8C21-669538D2FF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39664D9-AB3B-47D0-8C21-669538D2FF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F3CA5A-6C11-4963-8001-10251553F22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F3CA5A-6C11-4963-8001-10251553F22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F3CA5A-6C11-4963-8001-10251553F22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F3CA5A-6C11-4963-8001-10251553F22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD347D36-4CA8-4699-BC68-069CA83077AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD347D36-4CA8-4699-BC68-069CA83077AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD347D36-4CA8-4699-BC68-069CA83077AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD347D36-4CA8-4699-BC68-069CA83077AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
