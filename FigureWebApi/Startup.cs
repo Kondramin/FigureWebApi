@@ -1,16 +1,16 @@
+using Figure.Database;
+using Figure.Database.Context;
+using Figure.Interfaces.Base.Repositories;
+using Figure.Interfaces.MathOperations;
+using Figure.Services.MathOperatoins;
+using Figure.Services.Repository.Base;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FigureWebApi
 {
@@ -28,6 +28,13 @@ namespace FigureWebApi
         {
 
             services.AddControllers();
+
+            services.AddDbContext<FigureDb>(opt => opt.UseSqlite(Configuration.GetConnectionString("SQLite")));
+            services.AddTransient<InitializeDB>();
+
+            services.AddTransient(typeof(IRepository<>), typeof(DbRepository<>));
+            services.AddTransient<IMathOperation, MathOperation>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FigureWebApi", Version = "v1" });
@@ -35,8 +42,10 @@ namespace FigureWebApi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, InitializeDB initialize)
         {
+            initialize.Initialize();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
