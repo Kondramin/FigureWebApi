@@ -13,12 +13,12 @@ namespace Figure.Services.MathOperatoins
             if (figureEntity.CountOfAngles == 0)
             {
                 if (!(figureEntity is Circle circle)) throw new ArgumentException(nameof(figureEntity));
-                return CalculateCircleArea(circle);
+                return Math.Round(CalculateCircleArea(circle), 3);
             }
             
             if (!(figureEntity is Triangle triangle)) throw new ArgumentException(nameof(figureEntity));
 
-            return CalculateTriangleArea(triangle);
+            return Math.Round(CalculateTriangleArea(triangle), 3);
         }
 
 
