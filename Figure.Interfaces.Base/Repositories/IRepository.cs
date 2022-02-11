@@ -1,4 +1,5 @@
 ﻿using Figure.Interfaces.Base.Entities;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -7,6 +8,9 @@ namespace Figure.Interfaces.Base.Repositories
     public interface IRepository<T> where T : IEntity, new()
     {
         bool AutoSaveChanges { get; set; }
+
+
+        IQueryable<T> Items { get; }
 
 
         T Add(T entity);
