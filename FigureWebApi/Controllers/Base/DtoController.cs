@@ -12,7 +12,7 @@ namespace FigureWebApi.Controllers.Base
 {
     [Route("api/[controller]")]
     [ApiController]
-    public abstract class MappedEntityController<T, TBase> : ControllerBase
+    public abstract class DtoController<T, TBase> : ControllerBase
         where T : IMappedEntity, new()
         where TBase : IEntity, new()
     {
@@ -20,7 +20,7 @@ namespace FigureWebApi.Controllers.Base
         private readonly IMapper _Mapper;
         private readonly IMathOperation _MathOperation;
 
-        public MappedEntityController(IRepository<TBase> repository, IMapper mapper, IMathOperation mathOperation)
+        public DtoController(IRepository<TBase> repository, IMapper mapper, IMathOperation mathOperation)
         {
             _Repository = repository;
             _Mapper = mapper;
@@ -41,7 +41,7 @@ namespace FigureWebApi.Controllers.Base
         public async Task<IActionResult> AddNew(T item)
         {
             if (item is null) return BadRequest();
-            await _Repository.AddAsync(GetBase(item));
+            item = GetT(await _Repository.AddAsync(GetBase(item)));
 
             return Ok(item);
         }

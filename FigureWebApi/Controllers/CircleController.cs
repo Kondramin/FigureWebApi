@@ -7,7 +7,7 @@ using FigureWebApi.DtoModels;
 
 namespace FigureWebApi.Controllers
 {
-    public class CircleController : MappedEntityController<CircleDto, Circle>
+    public class CircleController : DtoController<CircleDto, Circle>
     {
         public CircleController(IRepository<Circle> repository, IMapper mapper, IMathOperation mathOperation) : base(repository, mapper, mathOperation) { }
     }

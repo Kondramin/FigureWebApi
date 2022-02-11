@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureWebApi", "FigureWebApi\FigureWebApi.csproj", "{579618DD-6317-4458-86F2-C05AB03CFCF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureWebApi", "FigureWebApi\FigureWebApi.csproj", "{579618DD-6317-4458-86F2-C05AB03CFCF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Database", "Figure.Database\Figure.Database.csproj", "{A39664D9-AB3B-47D0-8C21-669538D2FF56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Database", "Figure.Database\Figure.Database.csproj", "{A39664D9-AB3B-47D0-8C21-669538D2FF56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Data.Entity", "Figure.Data.Entity\Figure.Data.Entity.csproj", "{88F3CA5A-6C11-4963-8001-10251553F22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Data.Entity", "Figure.Data.Entity\Figure.Data.Entity.csproj", "{88F3CA5A-6C11-4963-8001-10251553F22F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Services", "Figure.Services\Figure.Services.csproj", "{FD347D36-4CA8-4699-BC68-069CA83077AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Services", "Figure.Services\Figure.Services.csproj", "{FD347D36-4CA8-4699-BC68-069CA83077AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Interfaces.Base", "Figure.Interfaces.Base\Figure.Interfaces.Base.csproj", "{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Interfaces.Base", "Figure.Interfaces.Base\Figure.Interfaces.Base.csproj", "{E0B8B30A-21CA-4E9F-9D4C-03EB6AF95B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Interfaces", "Figure.Interfaces\Figure.Interfaces.csproj", "{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Figure.Interfaces", "Figure.Interfaces\Figure.Interfaces.csproj", "{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure.Tests", "Figure.Tests\Figure.Tests.csproj", "{FB71FC22-140F-4058-8ED8-B8EB687237E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89EDBE1B-E9E3-4245-8CC4-823CA1F6D8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB71FC22-140F-4058-8ED8-B8EB687237E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB71FC22-140F-4058-8ED8-B8EB687237E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB71FC22-140F-4058-8ED8-B8EB687237E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB71FC22-140F-4058-8ED8-B8EB687237E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using FigureWebApi.DtoModels;
 
 namespace FigureWebApi.Controllers
 {
-    public class TriangleController : MappedEntityController<TriangleDto, Triangle>
+    public class TriangleController : DtoController<TriangleDto, Triangle>
     {
         public TriangleController(IRepository<Triangle> repository, IMapper mapper, IMathOperation mathOperation) : base(repository, mapper, mathOperation) { } 
     }
